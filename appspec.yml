@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/srv02
+    destination: /home/ubuntu/srv-02
   
 
 hooks:
