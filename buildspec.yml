@@ -11,6 +11,6 @@ phases:
 artifacts:
   files:
     - scripts/*
-    - appspec.yaml
+    - appspec.yml
     - bin/Release/net8.0/linux-x64/*
   discard-paths: yes
