@@ -3,6 +3,7 @@ os: linux
 files:
   - source: ./bin/Release/net8.0/linux-x64/
     destination: /home/ubuntu/srv-02
+file_exists_behavior: OVERWRITE
   
 
 hooks:
