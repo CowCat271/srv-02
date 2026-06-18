@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /srv02.dll
+  - source: /srv02*
     destination: /home/ubuntu/srv-02
   
 
