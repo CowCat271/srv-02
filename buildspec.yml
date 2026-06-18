@@ -13,4 +13,4 @@ artifacts:
     - scripts/*
     - appspec.yml
     - bin/Release/net8.0/linux-x64/*
-  discard-paths: yes
+  discard-paths: no

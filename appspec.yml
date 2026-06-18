@@ -1,20 +1,20 @@
 version: 0.0
 os: linux
 files:
-  - source: /srv02*
+  - source: ./bin/Release/net8.0/linux-x64/
     destination: /home/ubuntu/srv-02
   
 
 hooks:
   BeforeInstall: # place a dumb before install script to make things work (do not ask why)
-    - location: before_install.sh
+    - location: ./scripts/before_install.sh
       timeout: 30
   AfterInstall:
-    - location: after_install.sh
+    - location: ./scripts/after_install.sh
       timeout: 30
   ApplicationStart:
-    - location: start.sh
+    - location: ./scripts/start.sh
       timeout: 30
   ApplicationStop:
-    - location: stop.sh
+    - location: ./scripts/stop.sh
       timeout: 30
