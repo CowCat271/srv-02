@@ -1,20 +1,20 @@
 version: 0.0
 os: linux
-file:
-  source: /
-  destination: /home/ubuntu/srv02
+files:
+  - source: /
+    destination: /home/ubuntu/srv02
   
 
 hooks:
   BeforeInstall: # place a dumb before install script to make things work (do not ask why)
     - location: before_install.sh
-    - timeout: 30
+      timeout: 30
   AfterInstall:
     - location: after_install.sh
-    - timeout: 30
+      timeout: 30
   ApplicationStart:
     - location: start.sh
-    - timeout: 30
+      timeout: 30
   ApplicationStop:
     - location: stop.sh
-    - timeout: 30
+      timeout: 30
