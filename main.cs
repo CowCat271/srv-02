@@ -33,7 +33,7 @@ class Program
                 response.StatusDescription = "OK";
 
                 int i = rnd.Next(s3Facts.Length);
-                string message = $"{DateTime.Now:T} - V2 - {s3Facts[i]}";
+                string message = $"{DateTime.Now:T} - V3 - {s3Facts[i]}";
 
                 Console.WriteLine(message);
 
